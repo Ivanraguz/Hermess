@@ -1,0 +1,16 @@
+{
+  "name": "hermess-academy",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Offline 3D instructor studio for twin-azimuth-pod ship handling",
+  "scripts": {
+    "test": "node checks/run.cjs",
+    "package": "python3 checks/package.py",
+    "check": "node --check app.js && node --check course.js && node --check hud.js && node --check scene3d.js && node --check icons.js",
+    "test:bundle": "node checks/bundle.cjs"
+  },
+  "devDependencies": {
+    "axe-core": "4.10.3",
+    "playwright": "1.62.1"
+  }
+}
